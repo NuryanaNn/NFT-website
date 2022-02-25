@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome-5/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <title>NFT Websites</title>
 </head>
 
@@ -181,16 +183,20 @@
                     <h3>live auction</h3>
                 </li>
                 <li>
-                    <div class="btnNoFill">view all explore</div>
+                    <div class="btnFill">view all explore</div>
                 </li>
             </ul>
         </div>
 
-        <div class="contentBox">
-            <div class="wrapper">
-                <div class="cards">
+        <div class="swiper contentBox">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide cards">
                     <div class="imgBox">
-                        <img src="2.jpg" alt="">
+                        <img src="1.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell"></div>
                     </div>
                     <div class="content">
                         <h3>colorfull abstract painting</h3>
@@ -204,14 +210,18 @@
                             </li>
                         </ul>
                         <ul class="bid">
-                            <li><span>place a bid</span></li>
-                            <li><a href="">view history</a></li>
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="swiper-slide cards">
                     <div class="imgBox">
                         <img src="2.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell2"></div>
                     </div>
                     <div class="content">
                         <h3>colorfull abstract painting</h3>
@@ -225,14 +235,18 @@
                             </li>
                         </ul>
                         <ul class="bid">
-                            <li><span>place a bid</span></li>
-                            <li><a href="">view history</a></li>
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="swiper-slide cards">
                     <div class="imgBox">
-                        <img src="2.jpg" alt="">
+                        <img src="3.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell3"></div>
                     </div>
                     <div class="content">
                         <h3>colorfull abstract painting</h3>
@@ -246,13 +260,366 @@
                             </li>
                         </ul>
                         <ul class="bid">
-                            <li><span>place a bid</span></li>
-                            <li><a href="">view history</a></li>
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide cards">
+                    <div class="imgBox">
+                        <img src="4.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell4"></div>
+                    </div>
+                    <div class="content">
+                        <h3>colorfull abstract painting</h3>
+                        <ul class="owner">
+                            <li><img src="user1.jpg" alt=""></li>
+                            <li><span>owned by</span><br>
+                                <h3><a href="">meow bits</a></h3>
+                            </li>
+                            <li><span>current bid</span><br>
+                                <h3>4.89 eth</h3>
+                            </li>
+                        </ul>
+                        <ul class="bid">
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide cards">
+                    <div class="imgBox">
+                        <img src="5.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell5"></div>
+                    </div>
+                    <div class="content">
+                        <h3>colorfull abstract painting</h3>
+                        <ul class="owner">
+                            <li><img src="user1.jpg" alt=""></li>
+                            <li><span>owned by</span><br>
+                                <h3><a href="">meow bits</a></h3>
+                            </li>
+                            <li><span>current bid</span><br>
+                                <h3>4.89 eth</h3>
+                            </li>
+                        </ul>
+                        <ul class="bid">
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="swiper-slide cards">
+                    <div class="imgBox">
+                        <img src="6.jpg" alt="">
+                        <div class="likes">
+                            <i class="fas fa-heart"></i>1.2k
+                        </div>
+                        <div id="timesSell6"></div>
+                    </div>
+                    <div class="content">
+                        <h3>colorfull abstract painting</h3>
+                        <ul class="owner">
+                            <li><img src="user1.jpg" alt=""></li>
+                            <li><span>owned by</span><br>
+                                <h3><a href="">meow bits</a></h3>
+                            </li>
+                            <li><span>current bid</span><br>
+                                <h3>4.89 eth</h3>
+                            </li>
+                        </ul>
+                        <ul class="bid">
+                            <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                            <li><i class="fas fa-history"></i><a href="">view history</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="topCreators">
+        <div class="title">
+            <ul>
+                <li>
+                    <h3>top creators</h3>
+                </li>
+                <li>
+                    <div class="btnFill">view all creators</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contentCreators">
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <div class="title">
+            <ul>
+                <li>
+                    <h3>featured arts</h3>
+                </li>
+                <li>
+                    <div class="btnFill">view all explore</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="featuredContent">
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="imgBox">
+                    <img src="2.jpg" alt="">
+                    <div class="likes">
+                        <i class="fas fa-heart"></i>1.2k
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>colorfull abstract painting</h3>
+                    <ul class="owner">
+                        <li><img src="user1.jpg" alt=""></li>
+                        <li><span>owned by</span><br>
+                            <h3><a href="">meow bits</a></h3>
+                        </li>
+                        <li><span>current bid</span><br>
+                            <h3>4.89 eth</h3>
+                        </li>
+                    </ul>
+                    <ul class="bid">
+                        <li><span><i class="fas fa-shopping-bag"></i> place a bid</span></li>
+                        <li><i class="fas fa-history"></i><a href="">view history</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
