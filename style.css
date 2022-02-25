@@ -694,6 +694,7 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     width: 250px;
     height: 100px;
     display: flex;
+    flex-direction: row;
 }
 
 .topCreators .contentCreators .cards ul li .images{
@@ -776,6 +777,7 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     background: var(--card-colors);
     padding: 15px;
     margin-right: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     position: relative;
     z-index: 1;
@@ -1064,7 +1066,22 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     }
 
     .contentBox .cards{
-        margin-left: -17px;
+        margin-left: -15px;
     }
+
+    .showcase ul, .topCreators.title ul{
+        display: block;
+        width: 200px;
+    }
+
+    .topCreators .contentCreators .cards {
+        width: 285px;
+        height: 100px;
+    }
+
+    .featuredContent .cards {
+        margin-right: 7px;
+    }
+ 
     
 }
