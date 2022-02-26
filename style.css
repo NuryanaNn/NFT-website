@@ -16,6 +16,9 @@
     --card-colors:#001a46;
     --times-bg:#402ab0;
     --blue-color:#019dea;
+    --subs-bg:#10111e;
+    --blue-icn:#084f99;
+    --purple:#a64295;
 }
 
 *{
@@ -27,8 +30,9 @@ box-sizing:border-box;
 /* Public Function */
 body{
     background: var(--body-Bg);
-    height: 15000px;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: 2s;
 }
 
 section{
@@ -47,6 +51,7 @@ a:hover{
     border-radius: 10px;
     background: var(--outline-border);
     transition: 1s;
+    text-decoration: none;
 }
 
 .btnFill:hover{
@@ -61,6 +66,7 @@ a:hover{
     padding: 15px 15px;
     border-radius: 10px;
     transition: 1s;
+    text-decoration: none;
 }
 
 .btnNoFill:hover{
@@ -738,7 +744,7 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
 }
 
 .topCreators .contentCreators .cards ul li p{
-    color: var(--white-color);
+    color: var(--muted-text);
     text-transform: uppercase;
     margin-top: 6px;
     cursor: default;
@@ -989,6 +995,10 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     color: var(--white-color);
 }
 
+.contentBox .cards .content .ownerNews li i:hover{
+    background: var(--blues-purple);
+}
+
 .contentBox .cards .date{
     position: absolute;
     bottom: 0;
@@ -1000,9 +1010,149 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
 }
 
 
+/* =======================Subscribed==================== */
+.subscribe{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--subs-bg);
+}
 
+.subscribe .contentNews ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    flex-direction: row;
+    font-weight: bold;
+}
 
+.subscribe .contentNews ul li:nth-child(2){
+    margin-left: 10px;
+}
 
+.subscribe .contentNews ul li h1{
+    font-size: 1.5rem;
+    color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.subscribe .contentNews ul li h3{
+    text-transform: capitalize;
+    color: var(--muted-text);
+    margin-top: -10px;
+}
+
+.subscribe .subsForm input{
+    background: var(--black-color);
+    outline: none;
+    height: 50px;
+    border: none;
+    width: 350px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+.subscribe .subsForm button{
+    background: var(--blues-purple);
+    height: 50px;
+    color: var(--white-color);
+    outline: none;
+    border: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* ========================Footer================== */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.footer .box1{
+    width: 250px;
+}
+
+.footer .box1 h3{
+    color: var(--white-color);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    border-bottom: 2px solid var(--muted-text);
+}
+
+.footer .box1 h3::before{
+    content: '';
+    background: var(--blues-purple);
+    position: absolute;
+    bottom: -3px;
+    width: 50px;
+    height: 3px;
+}
+
+.footer .box1 ul{
+    list-style: none;
+}
+
+.footer .box1 ul li{
+    color: var(--muted-text);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.footer .box1 ul li p{
+    font-size: .8rem;
+}
+
+.footer .box1 .content .logos{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .box1 .content .logos i{
+    margin-right: 5px;
+}
+
+.footer .box1 .content li p a{
+    font-size: .8rem;
+    color: var(--muted-text);
+    transition: .5s;
+    text-decoration: none;
+}
+
+.footer .box1 .content li p a:hover{
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+    transition: .5s;
+}
+
+.sci i{
+    padding: 6px;
+    color: var(--white-color);
+}
+
+.sci i:nth-child(1){
+    background: var(--blue-icn);
+}
+
+.sci i:nth-child(2){
+    background: var(--blue-color)
+}
+
+.sci i:nth-child(3){
+    background: var(--purple);
+}
+
+.sci i:nth-child(4){
+    background: var(--blue-icn);
+}
 
 
 
@@ -1107,6 +1257,11 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     .banner .content h2{
         font-size: 2rem;
     }
+
+    /* subs */
+    .subscribe .contentNews ul li h3{
+        font-size: .9rem;
+    }
     
 }
 
@@ -1167,6 +1322,12 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
         width: 200px;
     }
 
+    .topCreators ul li h3,
+    .featured ul li h3,
+    .showcase ul li h3{
+        margin-bottom: 15px;
+    }
+
     .topCreators .contentCreators .cards {
         width: 285px;
         height: 100px;
@@ -1175,6 +1336,23 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     .featuredContent .cards {
         margin-right: 7px;
     }
- 
+
+    /* Subs */    
+    .subscribe .contentNews ul li h1{
+        font-size: 1rem;
+    }
+
+    .subscribe .contentNews ul li h3{
+        font-size: .7rem;
+    }
+
+    .subscribe .subsForm input{
+        width: 280px;
+        margin-top: 15px;
+    }
+
+    .subscribe .subsForm button{
+        margin-top: 20px;
+    }
     
 }
