@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-5/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="" class="logo">NNFT</a>
+
+        <div class="navbar">
+            <div class="dropdownMenu">
+                <button class="dropBtnMenu">home +</button>
+                <div class="dropdown">
+                    <a href="index.html">home style 1</a>
+                    <a href="">home style 2</a>
+                </div>
+            </div>
+            <div class="dropdownMenu">
+                <button class="dropBtnMenu">explore +</button>
+                <div class="dropdown">
+                    <a href="">explore artworks</a>
+                    <a href="">explore details</a>
+                    <a href="">explore creator</a>
+                    <a href="">creator details</a>
+                </div>
+            </div>
+            <a href="" class="activity">activity</a>
+            <div class="dropdownMenu">
+                <button class="dropBtnMenu">page +</button>
+                <div class="dropdown">
+                    <a href="">about us</a>
+                    <a href="">team</a>
+                    <a href="">pricing plane</a>
+                    <a href="">upload</a>
+                    <a href="">upload full</a>
+                    <a href="">faq</a>
+                    <a href="">404 error</a>
+                </div>
+            </div>
+            <div class="dropdownMenu">
+                <button class="dropBtnMenu">blog +</button>
+                <div class="dropdown">
+                    <a href="">blog</a>
+                    <a href="">blog grid</a>
+                    <a href="">blog left sidebar</a>
+                    <a href="">blog right sidebar</a>
+                    <a href="">blog details</a>
+                </div>
+            </div>
+            <a href="" class="contactUs">contact us</a>
+        </div>
+
+        <div class="searchUserBtn">
+            <ul>
+                <li><button id="searchMenu" class="fas fa-search"></button>
+                    <div class="popUpSearch">
+                        <input type="text" placeholder="Search Here"><i class="fas fa-search"></i>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdownMenuUser">
+                        <button><i class="fas fa-user"></i></button>
+                        <div class="dropdownUser">
+                            <a href="">profile</a>
+                            <a href="">activity</a>
+                            <a href="">sign in</a>
+                            <a href="">sign up</a>
+                            <a href="">forget password</a>
+                            <a href="">logout <i class="fas fa-logout"></i></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="burger">
+                        <div class="bars1"></div>
+                        <div class="bars1"></div>
+                        <div class="bars1"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <nav>
+        <div class="hiddenNav">
+            <h1>NNFT <i class="fas fa-times"></i></h1>
+
+            <ul class="navigation">
+                <li>
+                    <h3><a href="">home</a> <i class="fas fa-chevron-down droped" id="droped"></i></h3>
+                    <div class="navigator">
+                        <ul>
+                            <li><a href="">home v1</a></li>
+                            <li><a href="">home v2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3><a href="">explore</a> <i class="fas fa-chevron-down droped2" id="droped2"></i></h3>
+                    <div class="navigator2">
+                        <ul>
+                            <li><a href="">explore artworks</a></li>
+                            <li><a href="">explore details</a></li>
+                            <li><a href="">explore creator</a></li>
+                            <li><a href="">explore details</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3><a href="">activity</a></h3>
+                </li>
+                <li>
+                    <h3><a href="">page</a><i class="fas fa-chevron-down droped3" id="droped3"></i></h3>
+                    <div class="navigator3">
+                        <ul>
+                            <li><a href="">about us</a></li>
+                            <li><a href="">team</a></li>
+                            <li><a href="">pricing plane</a></li>
+                            <li><a href="">upload</a></li>
+                            <li><a href="">upload full</a></li>
+                            <li><a href="">faq</a></li>
+                            <li><a href="">404 error</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3><a href="">blog</a> <i class="fas fa-chevron-down droped4" id="droped4"></i></h3>
+                    <div class="navigator4">
+                        <ul>
+                            <li><a href="">blog</a></li>
+                            <li><a href="">blog grid</a></li>
+                            <li><a href="">blog left sidebar</a></li>
+                            <li><a href="">blog right sidebar</a></li>
+                            <li><a href="">blog details</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3><a href="">contact us</a></h3>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="showcaseBanner" id="showcaseBanner">
+        <div class="content">
+            <h1>explore artworks</h1>
+            <p>home <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i>explore</p>
+        </div>
+    </div>
+
+    <section class="categories" id="categories">
+        <div class="filtering">
+            <div class="categoryBox">
+                <ul>
+                    <li>category</li>
+                    <li><i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </div>
+            <div class="categoryBox">
+                <ul>
+                    <li>sort by</li>
+                    <li><i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </div>
+            <div class="categoryBox inputForms">
+                <input type="text"><i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="topCreators">
+        <div class="title">
+            <ul>
+                <li>
+                    <h3>top creators</h3>
+                </li>
+                <li>
+                    <a href="allCreator.html" class="btnFill">view all creators</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contentCreators">
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>wow creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user2.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>meta boss</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li><span>just wee</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user4.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>valk creates</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>craftold</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user5.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>meow bits</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user1.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>jhan sha</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li>
+                        <div class="images">
+                            <img src="img/user6.jpg" alt="">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </li>
+                    <li><span>mr. shaq</span><br>
+                        <p>3.656 eth</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <ul class="pagination">
+        <li><i class="fas fa-chevron-left"></i></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li><i class="fas fa-chevron-right"></i></li>
+    </ul>
+
+    <section class="subscribe">
+        <div class="contentNews">
+            <ul>
+                <li><img src="img/subscribe.png" alt=""></li>
+                <li>
+                    <h1>newslatter</h1><br>
+                    <h3>subscribe here for get every single updates</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="subsForm">
+            <input type="text" placeholder="enter your emails address"><button>subscribe now</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box1">
+            <h3>our address</h3>
+            <ul class="content">
+                <li>
+                    <div class="logos">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logos">
+                        <i class="fas fa-phone"></i>
+                        <p>
+                            +61 3 8376 6284</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="logos">
+                        <i class="fas fa-envelope"></i>
+                        <p>info123@gmail.com</p>
+                    </div>
+                </li>
+                <ul class="sci">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </ul>
+            </ul>
+        </div>
+        <div class="box1">
+            <h3>explore</h3>
+            <ul class="content">
+                <li>
+                    <p><a href="">explore artwork</a></p>
+                </li>
+                <li>
+                    <p><a href="">single artwork</a></p>
+                </li>
+                <li>
+                    <p><a href="">explore creator</a></p>
+                </li>
+                <li>
+                    <p><a href="">single creator</a></p>
+                </li>
+                <li>
+                    <p><a href="">all nft</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <h3>community</h3>
+            <ul class="content">
+                <li>
+                    <p><a href="">help center</a></p>
+                </li>
+                <li>
+                    <p><a href="">partner</a></p>
+                </li>
+                <li>
+                    <p><a href="">suggestion</a></p>
+                </li>
+                <li>
+                    <p><a href="">blog</a></p>
+                </li>
+                <li>
+                    <p><a href="">newslatter</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="box1">
+            <h3>info</h3>
+            <ul class="content">
+                <li>
+                    <p><a href="">faq</a></p>
+                </li>
+                <li>
+                    <p><a href="">tracking</a></p>
+                </li>
+                <li>
+                    <p><a href="">privacy police</a></p>
+                </li>
+                <li>
+                    <p><a href="">blog</a></p>
+                </li>
+                <li>
+                    <p><a href="">term condition</a></p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="copyright">
+        <p>Build With Love By Nuryana N</p>
+    </section>
+
+
+</body>
+
+</html>
