@@ -23,6 +23,7 @@
     --tags-bg:#022155;
     --details-bg:#1a203c;
     --ul-bg:#242c53;
+    --lineListed-bg:#3e3e3e;
 }
 
 *{
@@ -2171,10 +2172,12 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
 
 .activityList .cards ul li .imgBox{
     width: 100px;
+    border-radius: 8px;
 }
 
 .activityList .cards ul li .imgBox img{
     width: 100%;
+    border-radius: 8px;
 }
 
 .activityList .cards ul li h1{
@@ -2193,12 +2196,13 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
 }
 
 .activityList .cards ul li i{
-    background: var(--blue-color);
+    background: var(--blues-purple);
     padding: 10px;
     border-radius: 50%;
     position: absolute;
     right: 30px;
     bottom: 10px;
+    color: var(--white-color);
 }
 
 .activityList .sideActivity{
@@ -2206,7 +2210,7 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     padding: 20px;
     margin-top: 30px;
     max-width: 250px;
-    height: 250px;
+    height: 350px;
 }
 
 .activityList .sideActivity ul{
@@ -2219,10 +2223,14 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
 
 .activityList .sideActivity ul li{
     text-transform: capitalize;
-    border: 1px solid orange;
+    border: 1px solid var(--lineListed-bg);
     padding: 10px;
     color: var(--white-color);
     border-radius: 8px;
+}
+
+.activityList .sideActivity ul li i{
+    color: var(--blues-purple);
 }
 
 .contact{
@@ -2443,6 +2451,15 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
         max-width: 200px;
     }
     
+    /* Activity */
+    .activityList .sideActivity {
+        background: var(--details-bg);
+        padding: 20px;
+        margin-top: -20px;
+        max-width: 600px;
+        height: 200px;
+    }
+
 }
 
 @media(max-width:480px){
@@ -2577,4 +2594,38 @@ nav .hiddenNav .navigation .navigator4 ul li a::before
     .contact .contactBox ul li textarea{
         width: 250px;
     }
+
+    /* Team */
+    .team{
+        background: var(--blacked-section);
+        margin-top: 100px;
+    }
+
+    /* Activity */
+    .activityList .cards ul li .imgBox {
+        display: block;
+        width: 100%;
+    }
+
+    .activityList .sideActivity{
+        height: 300px;
+    }
+
+    /* BlogSidebar */
+    .sidebar {
+        margin-left: -10px;
+    }
+
+    .sidebar .searchBox {
+        max-width: 300px;
+    }
+
+    .sidebar .category {
+        width: 300px;
+    }
+
+    .sidebar .latestPost, .sidebar .tags {
+        width: 300px;
+    }
+
 }
